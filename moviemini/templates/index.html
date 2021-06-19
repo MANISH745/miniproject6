@@ -1,0 +1,57 @@
+<!Doctype>
+<html>
+   <head>
+<title>Recommendation System</title>
+<style>
+body {
+ background-image: url("https://mcdn.wallpapersafari.com/medium/91/81/jKXOgl.jpg");
+ background-color: #cccccc;
+ font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 200%;
+  line-height: 1.5;
+ 
+}
+.movie{
+height: 70vh;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        margin-right: 5vh;
+        margin-left: 5vh;
+        padding: 1em;
+        width: auto;
+       
+        text-align: center;
+}
+#submission_button{
+        width: 25%;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 5px;
+        color: white;
+        background-color:dodgerblue;
+        border-style: none;
+}
+ #movie_name{
+        width: 70%;
+        padding: 1em;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid grey;
+    }
+</style>
+
+</head>
+<body background>
+       <div class="movie">
+       
+        <h2 style="color:tomato;"><u>MoViE ReCoMmEnDer</u></h2>
+        <form action="{{ url_for('main') }}" method="POST">
+            <input type="text" id="movie_name" name="movie_name" placeholder="Enter the movie name" required >
+            <br>
+            <input type="submit" id="submission_button" value="Submit"/>
+        </form>
+  </div>
+  <h2 style="text-align: center;"</h2><br><br><br><br><br><font color="white" face=verdana>MANISH KUMAR GIRI<br>GRAPHIC ERA UNIVERSITY</h6></div>
+</body>
+</html>
